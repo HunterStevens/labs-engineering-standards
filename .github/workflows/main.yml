@@ -1,24 +1,40 @@
 name: Publish docs via GitHub Pages
 on:
+  pull_request:
   push:
     branches:
       - master
 
 jobs:
   build:
-    name: Deploy docs
+    name: build docs
     runs-on: ubuntu-latest
+    env:
+      PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
     steps:
-      - name: Checkout master
-        uses: actions/checkout@v2
+      - name: Checkout current branch
+        uses: actions/checkout@v1
+      
+      - uses: actions/setup-node@master
+      - name: Install markdownlint-cli
+        run: npm install markdownlint-cli
+      - name: Run markdownlint
+        run: node_modules/.bin/markdownlint . --config .markdownlint.json --ignore node_modules
 
-      - name: Lint the Markdown
-        uses: nosborn/github-action-markdown-cli@v1.1.1
+      - name: Setup Python
+        uses: actions/setup-python@v1
         with:
-          files: .
-          config_file: ".markdownlint.json"
+          python-version: '3.7'
+      - uses: dschep/install-pipenv-action@v1
+      - name: Pipenv install
+        run: pipenv install
 
-      - name: Deploy to GitHub pages
-        uses: mhausenblas/mkdocs-deploy-gh-pages@1.10
-        env:
-          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+      - name: Run mkdocs build
+        run: pipenv run mkdocs build
+      
+      - name: Setup git origin for deploy
+        if: github.event_name == 'push'
+        run: git remote add deploy "https://x-access-token:${PERSONAL_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+      - name: Deploy to Gihub Pages
+        if: github.event_name == 'push'
+        run: pipenv run mkdocs gh-deploy --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --remote-name deploy --force
