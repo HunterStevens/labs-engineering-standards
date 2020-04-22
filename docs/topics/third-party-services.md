@@ -31,6 +31,7 @@ Exceptions:
 The only permitted hosting providers for Lambda School Labs projects are listed below:
 
 * Amazon Web Services (AWS)
+    * See [AWS Standards](aws.md) for more detail
 * Heroku
 
 All others are prohibited from use, including:
