@@ -12,6 +12,10 @@ jobs:
       - name: Checkout master
         uses: actions/checkout@v2
       
+      - uses: actions/setup-python@v1.2.0
+        with:
+          python-version: 3.7
+      
       - uses: dschep/install-pipenv-action@v1
       - run: pipenv install
 
