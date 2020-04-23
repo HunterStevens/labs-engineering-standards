@@ -8,7 +8,7 @@ verify_ssl = true
 [packages]
 mkdocs-material = "*"
 pymdown-extensions = "*"
-Pygments = "*"
+pygments = "*"
 
 [requires]
 python_version = "3.7"
