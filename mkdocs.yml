@@ -33,6 +33,7 @@ markdown_extensions:
 
 nav:
     - Home: 'index.md'
+    - AWS: topics/aws.md
     - Code Quality: topics/code-quality.md
     - Data Persistence: topics/data-persistence.md
     - Developer Workflow: topics/developer-workflow.md
