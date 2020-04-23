@@ -24,13 +24,12 @@ Exceptions:
 
 * None
 
----
-
 ## (TH-110) Approved Hosting Providers
 
 The only permitted hosting providers for Lambda School Labs projects are listed below:
 
 * Amazon Web Services (AWS)
+    * See [AWS Standards](aws.md) for more detail
 * Heroku
 
 All others are prohibited from use, including:
@@ -50,8 +49,6 @@ Rationale:
 Exceptions:
 
 * None
-
----
 
 ## (TH-120) Approved Identity Providers
 
@@ -74,8 +71,6 @@ Alternatives:
 Exceptions:
 
 * None
-
----
 
 ## (TH-130) Approved CI/CD Platforms
 
@@ -100,8 +95,6 @@ Exceptions:
 
 * None
 
----
-
 ## (TH-140) Approved Domain Registrars
 
 The only permitted domain registration providers for Lambda School Labs projects
@@ -124,8 +117,6 @@ Alternatives:
 Exceptions:
 
 * None
-
----
 
 ## (TH-145) Approved DNS Providers
 
@@ -151,8 +142,6 @@ Exceptions:
 
 * None
 
----
-
 ## (TH-150) Approved Online Payment Services
 
 The only permitted online payment processing for Lambda School Labs projects
@@ -175,8 +164,6 @@ Exceptions:
 
 * None
 
----
-
 ## (TH-160) Approved Text Messaging Services
 
 The only permitted text messaging for Lambda School Labs projects are listed below:
@@ -198,8 +185,6 @@ Exceptions:
 
 * None
 
----
-
 ## (TH-170) Approved Email Services
 
 The only permitted email services for Lambda School Labs projects are listed below:
@@ -220,8 +205,6 @@ Alternatives:
 Exceptions:
 
 * None
-
----
 
 ## (TH-180) Approved Mapping Services
 
@@ -245,8 +228,6 @@ Exceptions:
 
 * None
 
----
-
 ## (TH-190) Approved Mobile App Stores
 
 The only permitted mobile app stores for Lambda School Labs projects are listed below:
@@ -269,8 +250,6 @@ Exceptions:
 
 * None
 
----
-
 ## (TH-200) Approved Code Quality Services
 
 The only permitted code quality services for Lambda School Labs projects are
@@ -292,8 +271,6 @@ Alternatives:
 Exceptions:
 
 * None
-
----
 
 ## (TH-210) Approved User Analytics Services
 
@@ -319,8 +296,6 @@ Alternatives:
 Exceptions:
 
 * None
-
----
 
 ## (TH-220) Approved Exception Monitoring Services
 

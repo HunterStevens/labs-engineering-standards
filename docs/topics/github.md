@@ -9,8 +9,6 @@ Rationale:
 
 - Centralizing code into a single organization allows for easier management.
 
----
-
 ## (GH-101) Organization Roles
 
 Lambda School staff and Section Leads will have the `Owner` role. All other
@@ -24,8 +22,6 @@ Exceptions:
 
 - TLs will be put into a cohort admin team with `Admin` role only on all
   cohort repos.
-
----
 
 ## (GH-102) GitHub Cohort Admin Teams
 
@@ -44,8 +40,6 @@ Exceptions:
 
 - None
 
----
-
 ## (GH-200) Dedicated GitHub Teams
 
 Each project team will have their own dedicated GitHub team within the Lambda
@@ -61,8 +55,6 @@ Exceptions:
 
 - None
 
----
-
 ## (GH-201) GitHub Team Naming
 
 GitHub project teams shall be created using the following convention:
@@ -77,8 +69,6 @@ Rationale:
 Exceptions:
 
 - None
-
----
 
 ## (GH-202) GitHub Team Roles
 
@@ -97,8 +87,6 @@ Rationale:
 Exceptions:
 
 - None
-
----
 
 ## (GH-300) GitHub Repo Naming
 
@@ -127,8 +115,6 @@ Exceptions:
 
 - None
 
----
-
 ## (GH-310) GitHub Templates
 
 All GitHub repositories must be created using one of the following templates:
@@ -147,8 +133,6 @@ Rationale:
 Exceptions:
 
 - None
-
----
 
 ## (GH-311) Require GitHub Branch Protection setup for master branch
 
@@ -170,8 +154,6 @@ Exceptions:
 
 - None
 
----
-
 ## (GH-320) GitHub Repo Licensing
 
 The README in the root of each GitHub repository must advertise that the code
@@ -192,8 +174,6 @@ Rationale:
 Exceptions:
 
 - None
-
----
 
 ## (GH-330) GitHub Repo Badges
 

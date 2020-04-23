@@ -26,8 +26,24 @@ Exceptions:
 - The following types of code can be excluded from your maintainability score:
     - Test code
     - Data migration code
-
----
+    - Generated code
+- In addition to the above exclusions, the following filter settings may be used
+  by any and all projects. Any additional filters require approval from an engineering
+  manager.
+  ``` yaml
+  # .codeclimate.yml
+  version: "2"
+  checks:
+    # Disable checks for similar code.
+    # Because this creates too many false positives.
+    similar-code:
+      enabled: false
+    # Increase the number of lines allowed for a method.
+    # Because this is more reasonable for JavaScript.
+    method-lines:
+      config:
+        threshold: 50
+  ```
 
 ## (CQ-110) Robust Test Coverage
 
@@ -57,8 +73,6 @@ Exceptions:
     - Test code
     - Data migration code
 
----
-
 ## (CQ-120) Code Cleanliness
 
 When code is no longer wanted, delete it. Never commit commented out code.
@@ -74,8 +88,6 @@ Rationale:
 Exceptions:
 
 - None
-
----
 
 ## (CQ-130) Never Hardcode Data
 
