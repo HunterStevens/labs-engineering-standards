@@ -57,8 +57,6 @@ One or more bullets suggesting alternatives for standards that prohibit some cho
 
 One or more bullets describing the reason the standard exists
 
----
-
 ## Linting
 
 All submissions must be linted using [markdownlint by David Anson](https://github.com/DavidAnson/markdownlint)

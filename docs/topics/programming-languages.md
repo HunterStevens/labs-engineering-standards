@@ -24,8 +24,6 @@ Exceptions:
 
 - None
 
----
-
 ## (PL-110) Approved Frameworks
 
 Framework        | Permitted Versions | Notes

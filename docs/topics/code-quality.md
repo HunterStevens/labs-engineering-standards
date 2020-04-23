@@ -27,8 +27,6 @@ Exceptions:
     - Test code
     - Data migration code
 
----
-
 ## (CQ-110) Robust Test Coverage
 
 Requirements:
@@ -57,8 +55,6 @@ Exceptions:
     - Test code
     - Data migration code
 
----
-
 ## (CQ-120) Code Cleanliness
 
 When code is no longer wanted, delete it. Never commit commented out code.
@@ -74,8 +70,6 @@ Rationale:
 Exceptions:
 
 - None
-
----
 
 ## (CQ-130) Never Hardcode Data
 

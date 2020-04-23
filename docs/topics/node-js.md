@@ -24,8 +24,6 @@ Exceptions:
 
 - None
 
----
-
 ## (NJ-200) Approved Testing Frameworks
 
 Only the following Node.js teting frameworks are approved for projects in Labs:
@@ -58,8 +56,6 @@ Notes:
 - This standard does _not_ exclude the use of various Jest plugins or compatible
   utility packages. For example, using SuperTest with Jest is perfectly acceptable
   as Jest is still the underlying test framework and SuperTest is simply an augmentation.
-
----
 
 ## (NJ-300) Always Commit Lock Files
 
