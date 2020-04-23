@@ -21,8 +21,6 @@ Alternatives:
   or an equivalent tool to put secrets into your local environment, which can
   then be read by your application at runtime.
 
----
-
 ## (SC-200) Never Store Secrets
 
 No software shall maintain user secrets in application storage.

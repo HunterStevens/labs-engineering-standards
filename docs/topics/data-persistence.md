@@ -15,8 +15,6 @@ Exceptions:
 
 - None
 
----
-
 ## (DP-200) Approved Database Engines
 
 Only the following database engines are approved for project in Labs:
