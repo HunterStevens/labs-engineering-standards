@@ -12,8 +12,6 @@ Exceptions:
 
 - None
 
----
-
 ## (GT-200) Feature Branch Naming
 
 Per GT-200, repositories should only contain a single `master` branch and zero
@@ -32,8 +30,6 @@ Rationale:
 Exceptions:
 
 - None
-
----
 
 ## (GT-300) Delete Merged Branches
 
