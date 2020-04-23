@@ -11,27 +11,27 @@ jobs:
     steps:
       - name: Checkout master
         uses: actions/checkout@v2
-      
+
       # Run the linter first, don't publish if it fails
       - name: Lint the Markdown
         uses: nosborn/github-action-markdown-cli@v1.1.1
         with:
           files: .
           config_file: ".markdownlint.json"
-      
+
       - name: Install Python
         uses: actions/setup-python@v1.2.0
         with:
           python-version: 3.7
-      
+
       - uses: dschep/install-pipenv-action@v1
-        
+
       - run: pipenv install
 
       # The mkdocks action requires a requirements.txt file
       - name: Generating requirements.txt
         run: pipenv lock -r
-        
+
       - name: Deploy to GitHub pages
         uses: mhausenblas/mkdocs-deploy-gh-pages@1.10
         env:
