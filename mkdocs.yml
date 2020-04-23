@@ -1,7 +1,23 @@
-site_name: 'Labs Engineering Standards'
-site_description: 'Engineering standards guide for Lambda School Labs'
+# Project information
+site_name: Labs Engineering Standards
+site_description: Engineering Standards for Lambda School Labs
+site_author: Lambda School Labs
+
+# Repository
 repo_name: 'Lambda-School-Labs/labs-engineering-standards'
 repo_url: 'https://github.com/Lambda-School-Labs/labs-engineering-standards'
+
+# Copyright
+copyright: © Lambda School
+
+# Configuration
+theme:
+  name: 'material'
+  logo: images/Lambda_Shield_Red.png
+  language: en
+
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
     - tables
@@ -12,22 +28,20 @@ markdown_extensions:
     - pymdownx.betterem:
         smart_enable: all
     - pymdownx.details
-
-theme:
-  name: 'material'
+    - pymdownx.superfences
+    - pymdownx.inlinehilite
 
 nav:
     - Home: 'index.md'
-    - Writing Standards: topics/writing-standards.md
-    - Developer Workflow: topics/developer-workflow.md
-    - Programming Languages: topics/programming-languages.md
-    - React: topics/react.md
-    - Node.js: topics/node-js.md
-    - Git: topics/git.md
-    - GitHub: topics/github.md
     - Code Quality: topics/code-quality.md
     - Data Persistence: topics/data-persistence.md
+    - Developer Workflow: topics/developer-workflow.md
+    - Git: topics/git.md
+    - GitHub: topics/github.md
+    - Node.js: topics/node-js.md
+    - Programming Languages: topics/programming-languages.md
+    - React: topics/react.md
+    - Security: topics/security.md
     - Third Party Services: topics/third-party-services.md
     - Web API Frameworks: topics/web-api-frameworks.md
-    - Security: topics/security.md
-    - AWS: topics/aws.md
+    - Writing Standards: topics/writing-standards.md
