@@ -26,7 +26,8 @@ jobs:
 
       - uses: dschep/install-pipenv-action@v1
 
-      - run: pipenv install
+      - name: Install PipEnv
+        run: pipenv install
 
       # The mkdocks action requires a requirements.txt file
       - name: Generating requirements.txt
