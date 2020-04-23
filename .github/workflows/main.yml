@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout master
         uses: actions/checkout@v2
+      
+      - uses: dschep/install-pipenv-action@v1
+      - run: pipenv install
 
       - name: Lint the Markdown
         uses: nosborn/github-action-markdown-cli@v1.1.1
