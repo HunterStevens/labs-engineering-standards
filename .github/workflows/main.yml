@@ -30,7 +30,7 @@ jobs:
 
       # The mkdocks action requires a requirements.txt file
       - name: Generating requirements.txt
-        run: pipenv lock -r
+        run: pipenv lock -r > requirements.txt
         
       - name: Deploy to GitHub pages
         uses: mhausenblas/mkdocs-deploy-gh-pages@1.10
