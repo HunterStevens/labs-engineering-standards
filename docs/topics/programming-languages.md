@@ -7,6 +7,7 @@ Language     | Frontend      | Backend      | Mobile
 Java         | Prohibited    | Java SE 12   | See PL-110
              |               | Java SE 13   |
 Javascript   | See PL-110    | See PL-110   | See PL-110
+Swift        | Prohibited    | Prohibited   | Swift 5
 Python       | Prohibited    | See PL-110   | Prohibited
 C#           | Prohibited    | Prohibited   | Prohibited
 PHP          | Prohibited    | Prohibited   | Prohibited
