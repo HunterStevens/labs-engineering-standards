@@ -26,7 +26,7 @@ Postgres     | > 11.5.0           | AWS RDS
 
 All other database engines are prohibited, including:
 
-- MongoDB, SQLite, MySQL, DB2
+- MongoDB, DynamoDB, SQLite, MySQL, DB2
 
 Rationale:
 
