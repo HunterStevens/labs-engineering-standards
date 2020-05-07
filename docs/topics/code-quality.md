@@ -43,6 +43,15 @@ Exceptions:
     method-lines:
       config:
         threshold: 50
+  exclude_patterns:
+    - "tests/"
+    - "spec/"
+    - "**/*.spec.js"
+    - "**/*.spec.jsx"
+    - "**/*.spec.ts"
+    - "**/*.spec.tsx"
+    - "**/vendor/"
+    - "**/node_modules/"
   ```
 
 ## (CQ-110) Robust Test Coverage
