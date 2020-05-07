@@ -5,6 +5,9 @@
 Only the following web API frameworks are approved for projects in Labs:
 
 - REST
+
+All other API types are prohibited, including:
+
 - GraphQL
 
 Rationale:
