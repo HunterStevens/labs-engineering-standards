@@ -2,14 +2,14 @@
 
 ## (SC-100) Never Commit Secrets
 
-No secrets, credentials or sensitive data shall ever be committed to a Git
+No secrets, credentials, or sensitive data shall ever be committed to a Git
 repository, either local or remote.
 
 Rationale:
 
 - Secrets provide access to administrative functions as well as protected data.
   Exposing secrets in a repository is a primary attack vector for compromised
-  systems that is exploited every day on the internet. Secrets must be protected
+  systems that are exploited every day on the internet. Secrets must be protected
   at all times and are instantly at risk and exposed when committed into a source
   code repository.
 
@@ -28,7 +28,7 @@ No software shall maintain user secrets in application storage.
 Rationale:
 
 - Effectively storing and protecting secrets is extremely difficult and incurs
-  a great deal of design, development and operational overhead.
+  a great deal of design, development, and operational overhead.
 
 Alternatives:
 
@@ -36,5 +36,5 @@ Alternatives:
 
 Exceptions:
 
-- Non-user specific secrets (e.g. api keys, etc.) should be stored using secure
+- Non-user specific secrets (e.g. API keys, etc.) should be stored using secure
   services and provided to the application at runtime using environment variables.
