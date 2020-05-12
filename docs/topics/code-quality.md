@@ -8,19 +8,20 @@ Requirements:
   score of B or above.
 - This score *must* be updated immediately after code is merged into the `master`
   branch.
+- This score must be updated immediately after code is merged into the master branch.
 - The maintainability score must be displayed near the top of the README at the
   root of the repository.
 
 Rationale:
-
-- Code Climate provides a robust and industry standard measure for the
-  maintainability of a code base. While this is only one of many possible
+  
+- Code Climate provides a robust and industry-standard measure for the
+  maintainability of a codebase. While this is only one of many possible
   measures, Code Climate provides a solid baseline for measuring code quality.
 
 Exceptions:
 
 - The following types of repositories are excluded from this standard:
-    - Data science repos containing only Jupyter Notebooks
+    - Data science repositories containing only Jupyter Notebooks
     - Static websites not containing any code
     - Repos containing only programming languages not supported by Code Climate
 - The following types of code can be excluded from your maintainability score:
@@ -28,7 +29,7 @@ Exceptions:
     - Data migration code
     - Generated code
 - In addition to the above exclusions, the following filter settings may be used
-  by any and all projects. Any additional filters require approval from an engineering
+  by all projects. Any additional filters require approval from an engineering
   manager.
   ``` yaml
   # .codeclimate.yml
@@ -76,7 +77,7 @@ Rationale:
 Exceptions:
 
 - The following types of repositories are excluded from this standard:
-    - Data science repos containing only Jupyter Notebooks
+    - Data science repositories containing only Jupyter Notebooks
     - Static websites not containing any code
 - The following code can be excluded from your test coverage percentage:
     - Test code
@@ -119,7 +120,7 @@ consider using a database or environment variable to pass data to a program.
 Rationale:
 
 - Data changes over time and if you hardcode it, you will need to redeploy your
-  application in order to update the data. If you use a database or environment
+  application to update the data. If you use a database or environment
   variable, you can change the data without requiring a new deployment.
 - While hardcoded data may not qualify as a secret, it still may be considered
   sensitive. For example, a hardcoded email address can be easily discovered in
