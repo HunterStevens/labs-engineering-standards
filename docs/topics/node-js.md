@@ -12,7 +12,7 @@ Only the following Node.js package managers are approved for projects in Labs:
 
 Rationale:
 
-- Well executed package management is a crucial to the realization of a stable
+- Well executed package management is crucial to the realization of a stable
   and consistent Node-based product. Only mature and stable package managers are
   permitted on Labs projects.
 
@@ -26,7 +26,7 @@ Exceptions:
 
 ## (NJ-200) Approved Testing Frameworks
 
-Only the following Node.js teting frameworks are approved for projects in Labs:
+Only the following Node.js testing frameworks are approved for projects in Labs:
 
 - [Jest](https://jestjs.io/)
     - Version > 25
@@ -40,8 +40,8 @@ Rationale:
 - While there are many valid ways to test a Node.js based application, we want
   limit the test frameworks in use so that we can maximize the opportunity for
   sharing of knowledge and tools.
-- Jest provides a robust and well supported feature set that allows it to perform
-  many different tasks without requiring many additional libraries.
+- Jest provides a robust and well-supported feature set that allows it to perform
+  many different tasks without requiring a lot of additional libraries.
 
 Alternatives:
 
