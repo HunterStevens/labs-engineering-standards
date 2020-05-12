@@ -37,12 +37,12 @@ An ID to use for referencing the standard in other documentation or automation.
 
 ### Description
 
-A clear, concise, specific and actionable description of the standard.
+A clear, concise, specific, and actionable description of the standard.
 Each standard *must* contain words that clearly direct decision making.
 Use words such as *shall, must, always and never.
 
 - This ID should *never* be changed once the standard has been set. If the
-  standard is no longer relevant or if the contents has changed significantly,
+  standard is no longer relevant or if the contents have changed significantly,
   the old standard should be retired and replaced with a new standard and new ID.
 - Format:
     - &lt;Two Letter Abbreviation>-&lt;Numerical Code>
