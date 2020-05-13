@@ -6,7 +6,7 @@ All branches must be created from the Master branch
 
 Rationale:
 
-- Multiple levels of branching from master creates opportunities for conflicts
+- Multiple levels of branching from master create opportunities for conflicts
 
 Exceptions:
 
@@ -33,13 +33,13 @@ Exceptions:
 
 ## (GT-300) Delete Merged Branches
 
-After a branch has been merged to master, it must be immediately delete.
+After a branch has been merged to master, it must be immediately deleted.
 
 Rationale:
 
 - Short-lived branches are a best-practice for minimizing merge conflicts.
   Leaving many branches active in a repository makes it difficult for team members
-  to navigate the ongoing work. Once a branch has been reviewed, approved and merged
+  to navigate the ongoing work. Once a branch has been reviewed, approved, and merged
   into the master branch, it should be immediately deleted.
 - A healthy Git repository has a minimum of active branches.
 - This is [easy to comply with using GitHub](https://help.github.com/en/github/administering-a-repository/managing-the-automatic-deletion-of-branches).

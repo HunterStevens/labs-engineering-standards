@@ -32,7 +32,7 @@ GitHub Cohort Admin teams need to be created using the following convention:
 Rationale:
 
 - Github repos don't allow a user to be added in addition to their team with
-  different roles. In order to allow TLs to be admins on their repos we need to
+  different roles. To allow TLs to be admins on their repos we need to
   create this admins team so they can integrate the repo with external services
   eg. Heroku and AWS.
 
@@ -42,12 +42,12 @@ Exceptions:
 
 ## (GH-200) Dedicated GitHub Teams
 
-Each project team will have their own dedicated GitHub team within the Lambda
+Each project team will have it's own dedicated GitHub team within the Lambda
 School Labs organization.
 
 Rationale:
 
-- Project specific teams allows for easier application of precise
+- Project-specific teams allow for easier application of precise
   (least privilege) permissions as well as easier provisioning and
   de-provisioning as cohorts begin and end.
 
@@ -100,11 +100,11 @@ GitHub repos shall be named in all lowercase using the following convention:
     - `be` for a back-end repository
     - `ds` for a data science repository
     - `mobile` for a cross-platform mobile repository
-    - `ios` for an iOS specific mobile repository
-    - `android` for an Android specific mobile repository
+    - `ios` for an iOS-specific mobile repository
+    - `android` for an Android-specific mobile repository
     - `site` for a static website associated with the product
 - The `Postfix` is an arbitrary string that can be appended when multiple
-  repositories with the same purpose are require for a particular product.
+  repositories with the same purpose are required for a particular product.
 
 Rationale:
 
@@ -134,7 +134,7 @@ Exceptions:
 
 - None
 
-## (GH-311) Require GitHub Branch Protection setup for master branch
+## (GH-311) Require GitHub Branch Protection setup for the master branch
 
 All GitHub repositories must be setup with [branch protection](https://help.github.com/en/github/administering-a-repository/about-protected-branches)
 enabled for the `master` branch as follows:
@@ -169,7 +169,7 @@ Rationale:
 - Code written during Labs projects must be maintained as open-source so that
   it can be reference by hiring managers considering Lambda School students as candidates.
 - The MIT license is very permissive and provides opportunities for student
-  developed code to be reused and expanded by the open source community.
+  developed code to be reused and expanded by the open-source community.
 
 Exceptions:
 
