@@ -27,7 +27,7 @@ Exceptions:
 
 GitHub Cohort Admin teams need to be created using the following convention:
 
-- Name: `<Cohort> - Admins`  (Example: `Labs 20 - Admins`)
+- Name: `<Cohort> - Admins` (Example: `Labs 20 - Admins`)
 
 Rationale:
 
@@ -59,7 +59,7 @@ Exceptions:
 
 GitHub project teams shall be created using the following convention:
 
-- Name: `<Cohort> - <Product>`  (Example: `Labs 20 - Brew Plans`)
+- Name: `<Cohort> - <Product>` (Example: `Labs 20 - Brew Plans`)
 
 Rationale:
 
@@ -96,13 +96,13 @@ GitHub repos shall be named in all lowercase using the following convention:
 - The `Product` name can be stripped of special characters, shortened or
   otherwise made to be more readable, though it should remain consistent across repositories.
 - The `Purpose` must be one of the following
-    - `fe` for a front-end repository
-    - `be` for a back-end repository
-    - `ds` for a data science repository
-    - `mobile` for a cross-platform mobile repository
-    - `ios` for an iOS-specific mobile repository
-    - `android` for an Android-specific mobile repository
-    - `site` for a static website associated with the product
+  - `fe` for a front-end repository
+  - `be` for a back-end repository
+  - `ds` for a data science repository
+  - `mobile` for a cross-platform mobile repository
+  - `ios` for an iOS specific mobile repository
+  - `android` for an Android specific mobile repository
+  - `site` for a static website associated with the product
 - The `Postfix` is an arbitrary string that can be appended when multiple
   repositories with the same purpose are required for a particular product.
 
@@ -141,7 +141,7 @@ enabled for the `master` branch as follows:
 
 - Required approving reviews: 2 (or more)
 - Require status checks to be passing before merging (enabled)
-    - Require branches to be up to date before merging (enabled)
+  - Require branches to be up to date before merging (enabled)
 - Include administrators (enabled)
 
 Rationale:
@@ -161,8 +161,8 @@ is maintained under the MIT license.
 
 - There must be a file named LICENSE in the root of the directory using the MIT
   license format as described here: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
-    - Use the year the project was created for the year
-    - Use 'Lambda School' as the copyright holder
+  - Use the year the project was created for the year
+  - Use 'Lambda School' as the copyright holder
 
 Rationale:
 
@@ -180,9 +180,9 @@ Exceptions:
 The README in the root of each GitHub repository must contain the following badges:
 
 - Code Climate Maintainability
-    - [https://codeclimate.com/github/codeclimate/codeclimate/badges](https://codeclimate.com/github/codeclimate/codeclimate/badges)
+  - [https://codeclimate.com/github/codeclimate/codeclimate/badges](https://codeclimate.com/github/codeclimate/codeclimate/badges)
 - Code Climate Test Coverage
-    - [https://codeclimate.com/github/codeclimate/codeclimate/badges](https://codeclimate.com/github/codeclimate/codeclimate/badges)
+  - [https://codeclimate.com/github/codeclimate/codeclimate/badges](https://codeclimate.com/github/codeclimate/codeclimate/badges)
 
 Rationale:
 

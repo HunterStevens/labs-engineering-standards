@@ -4,12 +4,12 @@
 
 The only permitted AWS services for Lambda School Labs projects are listed below:
 
-* Amplify
-    * Front-end hosting of Single Page Apps (SPA) only
-* Elastic Beanstalk
-    * Data Science API deployments only
-* Sagemaker
-    * Data Science only
+- Amplify
+  - Front-end hosting of Single Page Apps (SPA) only
+- Elastic Beanstalk
+  - Data Science API deployments only
+- Sagemaker
+  - Data Science only
 
 All others are prohibited from use.
 
@@ -18,13 +18,13 @@ when provisioned by the orchestration services listed above.
 
 Rationale:
 
-* AWS is _very_ deep, with many different services and components. That complexity
+- AWS is _very_ deep, with many different services and components. That complexity
   needs careful controls to reduce risk and cost.
 
 Alternatives:
 
-* None
+- None
 
 Exceptions:
 
-* None
+- None

@@ -5,10 +5,10 @@
 Only the following Node.js package managers are approved for projects in Labs:
 
 - [NPM](https://docs.npmjs.com/)
-    - Version > 6.0.0
+  - Version > 6.0.0
 - [Yarn](https://yarnpkg.com/)
-    - Version > 2.0.0
-    - *Preferred*
+  - Version > 2.0.0
+  - _Preferred_
 
 Rationale:
 
@@ -29,7 +29,7 @@ Exceptions:
 Only the following Node.js testing frameworks are approved for projects in Labs:
 
 - [Jest](https://jestjs.io/)
-    - Version > 25
+  - Version > 25
 
 Not permitted:
 

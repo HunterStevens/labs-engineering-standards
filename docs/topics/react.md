@@ -5,9 +5,9 @@
 Only the following Node.js package managers are approved for projects in Labs:
 
 - [Redux](https://react-redux.js.org/)
-    - Version > 7.1
+  - Version > 7.1
 - [Context API](https://reactjs.org/docs/context.html)
-    - N/A
+  - N/A
 
 Rationale:
 
@@ -22,5 +22,5 @@ Alternatives:
 Exceptions:
 
 - [Apollo Client](https://www.apollographql.com/docs/react/)
-    - Version > 2.6
-    - For use in accessing third party services
+  - Version > 2.6
+  - For use in accessing third party services
