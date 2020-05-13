@@ -4,16 +4,15 @@
 
 Requirements:
 
-- All repositories *must* maintain their `master` branch at a Code Climate maintainability
+- All repositories _must_ maintain their `master` branch at a Code Climate maintainability
   score of B or above.
-- This score *must* be updated immediately after code is merged into the `master`
+- This score _must_ be updated immediately after code is merged into the `master`
   branch.
-- This score must be updated immediately after code is merged into the master branch.
 - The maintainability score must be displayed near the top of the README at the
   root of the repository.
 
 Rationale:
-  
+
 - Code Climate provides a robust and industry-standard measure for the
   maintainability of a codebase. While this is only one of many possible
   measures, Code Climate provides a solid baseline for measuring code quality.
@@ -21,17 +20,17 @@ Rationale:
 Exceptions:
 
 - The following types of repositories are excluded from this standard:
-    - Data science repositories containing only Jupyter Notebooks
-    - Static websites not containing any code
-    - Repos containing only programming languages not supported by Code Climate
+  - Data science repositories containing only Jupyter Notebooks
+  - Static websites not containing any code
+  - Repos containing only programming languages not supported by Code Climate
 - The following types of code can be excluded from your maintainability score:
-    - Test code
-    - Data migration code
-    - Generated code
+  - Test code
+  - Data migration code
+  - Generated code
 - In addition to the above exclusions, the following filter settings may be used
   by all projects. Any additional filters require approval from an engineering
   manager.
-  ``` yaml
+  ```yaml
   # .codeclimate.yml
   version: "2"
   checks:
@@ -61,11 +60,11 @@ Requirements:
 
 - All repositories are required to maintain a code coverage level of 40%
   or higher for their `master` branch.
-- Code coverage percentage *must* be published whenever code is pushed
+- Code coverage percentage _must_ be published whenever code is pushed
   into the `master` branch.
 - The code coverage percentage must be displayed near the top of the README at the
   root of the repository.
-- All application code *must* be included in the coverage percentage, even if tests
+- All application code _must_ be included in the coverage percentage, even if tests
   have yet to be written for the code.
 
 Rationale:
@@ -77,11 +76,11 @@ Rationale:
 Exceptions:
 
 - The following types of repositories are excluded from this standard:
-    - Data science repositories containing only Jupyter Notebooks
-    - Static websites not containing any code
+  - Data science repositories containing only Jupyter Notebooks
+  - Static websites not containing any code
 - The following code can be excluded from your test coverage percentage:
-    - Test code
-    - Data migration code
+  - Test code
+  - Data migration code
 
 ## (CQ-120) Code Cleanliness
 
@@ -108,9 +107,9 @@ This includes:
 
 - URLs
 - User data
-    - Email addresses
-    - Usernames
-    - Addresses
+  - Email addresses
+  - Usernames
+  - Addresses
 - Identifiers for accessing external resources (e.g. OAuth Client ID)
 
 Data must _always_ be stored in an external persistent store, like a database, or

@@ -8,7 +8,7 @@ shared environment.
 Rationale:
 
 - Managing database servers is an incredibly complex and resource-intensive
-  endeavor. By utilizing management services, that operational overhead is
+  endeavor. By utilizing managed services, operational overhead is
   greatly reduced.
 
 Exceptions:
@@ -19,10 +19,10 @@ Exceptions:
 
 Only the following database engines are approved for projects in Labs:
 
-Engine       | Permitted Versions | Providers
------------- | ------------------ | ------------
-Postgres     | > 11.5.0           | AWS RDS
-             |                    | Heroku Postgres
+| Engine   | Permitted Versions | Providers |
+| -------- | ------------------ | --------- |
+| Postgres | > 11.5.0           | AWS RDS   |
+|          | Heroku Postgres    |
 
 All other database engines are prohibited, including:
 
@@ -30,10 +30,10 @@ All other database engines are prohibited, including:
 
 Rationale:
 
-- We restrict the database engine used in Lambda Labs so that we can focus 
-  resources on a subset of available technologies. By narrowing the field of
-  choices, we feel that product quality will be improved through the sharing of
-  common knowledge and reusable components.
+- We restrict database engine use in Lambda Labs so that we can focus our resources
+  on a subset of available technologies. By narrowing the field of choices, we feel
+  that product quality will be improved through the sharing of common knowledge and
+  reusable components.
 
 Exceptions:
 
