@@ -10,6 +10,10 @@ The only permitted AWS services for Lambda School Labs projects are listed below
   - Data Science API deployments only
 - Sagemaker
   - Data Science only
+- S3
+  - Public asset storage
+  - User uploads via signed URLs
+  - Data storage for DS teams
 
 All others are prohibited from use.
 
