@@ -320,6 +320,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../heroku/" title="Heroku" class="md-nav__link">
+      Heroku
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../node-js/" title="Node.js" class="md-nav__link">
       Node.js
     </a>
@@ -466,10 +478,11 @@
                 
                 <h1 id="git">Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h1>
 <h2 id="gt-100-only-branch-from-master">(GT-100) Only Branch from Master<a class="headerlink" href="#gt-100-only-branch-from-master" title="Permanent link">&para;</a></h2>
-<p>All branches must be created from the Master branch</p>
+<p>All branches must be created from the <code>master</code> branch</p>
 <p>Rationale:</p>
 <ul>
-<li>Multiple levels of branching from master creates opportunities for conflicts</li>
+<li>Multiple levels of branching from the <code>master</code> branch can create opportunities
+  for merge conflicts</li>
 </ul>
 <p>Exceptions:</p>
 <ul>
@@ -491,13 +504,13 @@ address in their profile, the branch should be named <code>feature/change-email<
 <li>None</li>
 </ul>
 <h2 id="gt-300-delete-merged-branches">(GT-300) Delete Merged Branches<a class="headerlink" href="#gt-300-delete-merged-branches" title="Permanent link">&para;</a></h2>
-<p>After a branch has been merged to master, it must be immediately delete.</p>
+<p>After a branch has been merged to master, it must be immediately deleted.</p>
 <p>Rationale:</p>
 <ul>
 <li>Short-lived branches are a best-practice for minimizing merge conflicts.
   Leaving many branches active in a repository makes it difficult for team members
-  to navigate the ongoing work. Once a branch has been reviewed, approved and merged
-  into the master branch, it should be immediately deleted.</li>
+  to navigate the ongoing work. Once a branch has been reviewed, approved, and merged
+  into the <code>master</code> branch, it should be immediately deleted.</li>
 <li>A healthy Git repository has a minimum of active branches.</li>
 <li>This is <a href="https://help.github.com/en/github/administering-a-repository/managing-the-automatic-deletion-of-branches">easy to comply with using GitHub</a>.</li>
 </ul>

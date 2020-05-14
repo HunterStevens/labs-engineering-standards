@@ -264,6 +264,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../heroku/" title="Heroku" class="md-nav__link">
+      Heroku
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../node-js/" title="Node.js" class="md-nav__link">
       Node.js
     </a>
@@ -452,13 +464,13 @@
                 
                 <h1 id="application-security">Application Security<a class="headerlink" href="#application-security" title="Permanent link">&para;</a></h1>
 <h2 id="sc-100-never-commit-secrets">(SC-100) Never Commit Secrets<a class="headerlink" href="#sc-100-never-commit-secrets" title="Permanent link">&para;</a></h2>
-<p>No secrets, credentials or sensitive data shall ever be committed to a Git
+<p>No secrets, credentials, or sensitive data shall ever be committed to a Git
 repository, either local or remote.</p>
 <p>Rationale:</p>
 <ul>
 <li>Secrets provide access to administrative functions as well as protected data.
   Exposing secrets in a repository is a primary attack vector for compromised
-  systems that is exploited every day on the internet. Secrets must be protected
+  systems that are exploited every day on the internet. Secrets must be protected
   at all times and are instantly at risk and exposed when committed into a source
   code repository.</li>
 </ul>
@@ -475,7 +487,7 @@ repository, either local or remote.</p>
 <p>Rationale:</p>
 <ul>
 <li>Effectively storing and protecting secrets is extremely difficult and incurs
-  a great deal of design, development and operational overhead.</li>
+  a great deal of design, development, and operational overhead.</li>
 </ul>
 <p>Alternatives:</p>
 <ul>
@@ -483,7 +495,7 @@ repository, either local or remote.</p>
 </ul>
 <p>Exceptions:</p>
 <ul>
-<li>Non-user specific secrets (e.g. api keys, etc.) should be stored using secure
+<li>Non-user specific secrets (e.g. API keys, etc.) should be stored using secure
   services and provided to the application at runtime using environment variables.</li>
 </ul>
                 

@@ -327,6 +327,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../heroku/" title="Heroku" class="md-nav__link">
+      Heroku
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../node-js/" title="Node.js" class="md-nav__link">
       Node.js
     </a>
@@ -491,26 +503,22 @@
 </ul>
 <p>Rationale:</p>
 <ul>
-<li>Code Climate provides a robust and industry standard measure for the
-  maintainability of a code base. While this is only one of many possible
+<li>Code Climate provides a robust and industry-standard measure for the
+  maintainability of a codebase. While this is only one of many possible
   measures, Code Climate provides a solid baseline for measuring code quality.</li>
 </ul>
 <p>Exceptions:</p>
 <ul>
-<li>The following types of repositories are excluded from this standard:<ul>
-<li>Data science repos containing only Jupyter Notebooks</li>
+<li>The following types of repositories are excluded from this standard:</li>
+<li>Data science repositories containing only Jupyter Notebooks</li>
 <li>Static websites not containing any code</li>
 <li>Repos containing only programming languages not supported by Code Climate</li>
-</ul>
-</li>
-<li>The following types of code can be excluded from your maintainability score:<ul>
+<li>The following types of code can be excluded from your maintainability score:</li>
 <li>Test code</li>
 <li>Data migration code</li>
 <li>Generated code</li>
-</ul>
-</li>
 <li>In addition to the above exclusions, the following filter settings may be used
-  by any and all projects. Any additional filters require approval from an engineering
+  by all projects. Any additional filters require approval from an engineering
   manager.
   <div class="highlight"><pre><span></span><code><span class="c1"># .codeclimate.yml</span>
 <span class="nt">version</span><span class="p">:</span> <span class="s">&quot;2&quot;</span>
@@ -555,16 +563,12 @@
 </ul>
 <p>Exceptions:</p>
 <ul>
-<li>The following types of repositories are excluded from this standard:<ul>
-<li>Data science repos containing only Jupyter Notebooks</li>
+<li>The following types of repositories are excluded from this standard:</li>
+<li>Data science repositories containing only Jupyter Notebooks</li>
 <li>Static websites not containing any code</li>
-</ul>
-</li>
-<li>The following code can be excluded from your test coverage percentage:<ul>
+<li>The following code can be excluded from your test coverage percentage:</li>
 <li>Test code</li>
 <li>Data migration code</li>
-</ul>
-</li>
 </ul>
 <h2 id="cq-120-code-cleanliness">(CQ-120) Code Cleanliness<a class="headerlink" href="#cq-120-code-cleanliness" title="Permanent link">&para;</a></h2>
 <p>When code is no longer wanted, delete it. Never commit commented out code.</p>
@@ -585,12 +589,10 @@ over time during runtime.</p>
 <p>This includes:</p>
 <ul>
 <li>URLs</li>
-<li>User data<ul>
+<li>User data</li>
 <li>Email addresses</li>
 <li>Usernames</li>
 <li>Addresses</li>
-</ul>
-</li>
 <li>Identifiers for accessing external resources (e.g. OAuth Client ID)</li>
 </ul>
 <p>Data must <em>always</em> be stored in an external persistent store, like a database, or
@@ -599,7 +601,7 @@ consider using a database or environment variable to pass data to a program.</p>
 <p>Rationale:</p>
 <ul>
 <li>Data changes over time and if you hardcode it, you will need to redeploy your
-  application in order to update the data. If you use a database or environment
+  application to update the data. If you use a database or environment
   variable, you can change the data without requiring a new deployment.</li>
 <li>While hardcoded data may not qualify as a secret, it still may be considered
   sensitive. For example, a hardcoded email address can be easily discovered in

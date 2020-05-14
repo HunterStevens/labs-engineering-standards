@@ -333,6 +333,18 @@
 
 
   <li class="md-nav__item">
+    <a href="topics/heroku/" title="Heroku" class="md-nav__link">
+      Heroku
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="topics/node-js/" title="Node.js" class="md-nav__link">
       Node.js
     </a>
@@ -492,18 +504,18 @@
                 
                 <h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
 <p>This document describes the engineering standards that teams working in Lambda X
-must comply with. Adherence to these standards are critical to the continued
+must comply with. Adherence to these standards is critical to the continued
 success of the Lambda X organization, as they allow us to more effectively
 manage the scores of teams working across hundreds of products.</p>
 <h2 id="topics">Topics<a class="headerlink" href="#topics" title="Permanent link">&para;</a></h2>
 <p>This guide is divided into separate topics, saved here in Notion as pages.
-A topic corresponds to a specific area of concern in software engineering. The
-topics can all be viewed in the menu at the top of the page.</p>
+A topic corresponds to a specific area of concern in software engineering.
+The topics can all be viewed in the menu at the top of the page.</p>
 <h2 id="standards">Standards<a class="headerlink" href="#standards" title="Permanent link">&para;</a></h2>
 <p>The standards in this guide do not cover all choices in technology. Many are
 purposely omitted as they are not considered impactful to the quality of the
 overall program.</p>
-<p>However, this guide is exclusive, in that if a technology choice
+<p>However, this guide is exclusive, in that, if a technology choice
 is <em>not</em> mentioned as part of a topic, you can assume the use of that technology
 is prohibited. When in doubt, please open an issue or submit a PR to start
 a discussion.</p>
@@ -514,52 +526,54 @@ available technologies, so that teams have options when making technical
 decisions. To in order to ensure that these documents are inclusive of the needs
 of all Labs groups, each new standard or change to an existing standard will be
 ratified by approval from 3 Labs Tech Leads.</p>
+<p>These standards will morph over time as we adapt to the ever-changing technology
+landscape. Also, the standards will embrace a subset of all of the
+available technologies, so that teams have options when making technical
+decisions. To ensure that these documents are inclusive of the needs
+of all Lab groups, each new standard or change to an existing standard will be
+ratified by approval from 3 Labs Tech Leads.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>All submissions must be linted using <a href="https://github.com/DavidAnson/markdownlint">markdownlint by David Anson</a></p>
-<p>See <a href="topics/writing-standards/">Writing Standards</a></p>
 </div>
+<p>All submissions must be linted using <a href="https://github.com/DavidAnson/markdownlint">markdownlint by David Anson</a></p>
+<div class="codehilite"><pre><span></span><code><span class="n">See</span> <span class="p">[</span><span class="n">Writing</span> <span class="n">Standards</span><span class="p">](</span><span class="n">topics</span><span class="o">/</span><span class="n">writing</span><span class="o">-</span><span class="n">standards</span><span class="p">.</span><span class="n">md</span><span class="p">)</span>
+</code></pre></div>
+
+
 <h3 id="setup-your-local-enviornment">Setup your local enviornment<a class="headerlink" href="#setup-your-local-enviornment" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>All steps below are based on the use of <a href="https://pipenv.kennethreitz.org/en/latest/">pipenv</a></p>
-<ul>
-<li>on mac: <code>&gt; brew install pipenv</code></li>
-</ul>
-<p>The github actions still require a <code>requirements.txt</code> file so if you add anything
-to the <code>Pipfile</code> you will also need to add it to the <code>requirements.txt</code> file.</p>
 </div>
+<p>All steps below are based on the use of <a href="https://pipenv.kennethreitz.org/en/latest/">pipenv</a></p>
+<div class="codehilite"><pre><span></span><code><span class="o">-</span> <span class="k">on</span> <span class="n">mac</span><span class="p">:</span> <span class="ss">`&gt; brew install pipenv`</span>
+
+<span class="n">The</span> <span class="n">GitHub</span> <span class="n">actions</span> <span class="n">still</span> <span class="k">require</span> <span class="n">a</span> <span class="ss">`requirements.txt`</span> <span class="n">file</span> <span class="n">so</span> <span class="k">if</span> <span class="n">you</span> <span class="k">add</span> <span class="n">anything</span>
+<span class="k">to</span> <span class="n">the</span> <span class="ss">`Pipfile`</span> <span class="n">you</span> <span class="n">will</span> <span class="n">also</span> <span class="n">need</span> <span class="k">to</span> <span class="k">add</span> <span class="n">it</span> <span class="k">to</span> <span class="n">the</span> <span class="ss">`requirements.txt`</span> <span class="n">file</span><span class="p">.</span>
+</code></pre></div>
+
+
 <ol>
-<li>Install all dependancies and setup a python virtual env<ul>
+<li>Install all dependencies and set up a python virtual env</li>
 <li><code>&gt; pipenv install --dev</code></li>
-</ul>
-</li>
-<li>Start a pipenv shell<ul>
+<li>Start a pipenv shell</li>
 <li><code>&gt; pipenv shell</code></li>
-</ul>
-</li>
-<li>Run the mkdocs server to build and view you local changes<ul>
+<li>Run the mkdocs server to build and view you local changes</li>
 <li><code>&gt; mkdocs serve</code></li>
 <li>Now open browser to <code>http://localhost:8000</code></li>
-</ul>
-</li>
-<li>install markdown linter<ul>
+<li>Install markdown linter</li>
 <li><code>&gt; npm install -g markdownlint-cli</code></li>
-</ul>
-</li>
 <li>
 <p>Run the markdown linter before commiting</p>
-<ul>
-<li><code>&gt; markdownlint -c .markdownlint.json .</code></li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>be aware that <code>mkdocs serve</code> serves the files directly from the docs
-fold and does not build the <code>site</code> folder as <code>mkdocs build</code> does.
-This means that relative paths may cause a warning.</p>
-</div>
+</li>
+<li>
+<p><code>&gt; markdownlint -c .markdownlint.json .</code></p>
 </li>
 </ol>
+<p>!!! Warning
+   Please be aware that the <code>mkdocs serve</code> command serves the files
+   directly from the docs folder and does not build the <code>site</code> folder
+   as does the <code>mkdocs build</code> command. This means that relative paths
+   may cause a warning.</p>
                 
               
               
