@@ -2,8 +2,6 @@
 
 ## (RE-100) Approved State Management Frameworks
 
-Only the following Node.js package managers are approved for projects in Labs:
-
 - [Redux](https://react-redux.js.org/)
   - Version > 7.1
 - [Context API](https://reactjs.org/docs/context.html)
@@ -24,3 +22,20 @@ Exceptions:
 - [Apollo Client](https://www.apollographql.com/docs/react/)
   - Version > 2.6
   - For use in accessing third party services
+
+## (RE-200) Approved Testing Frameworks
+
+- [Cypress](https://www.cypress.io/)
+  - Version > 4.0.0
+
+Rationale:
+
+- These testing frameworks will cover the majority of use cases for Labs projects.
+
+Alternatives:
+
+- None
+
+Exceptions:
+
+- None
