@@ -7,13 +7,13 @@ shared environment.
 
 Rationale:
 
-- Managing database servers is an incredibly complex and resource-intensive
-  endeavor. By utilizing managed services, operational overhead is
-  greatly reduced.
+-   Managing database servers is an incredibly complex and resource-intensive
+    endeavor. By utilizing managed services, operational overhead is
+    greatly reduced.
 
 Exceptions:
 
-- None
+-   None
 
 ## (DP-200) Approved Database Engines
 
@@ -26,15 +26,15 @@ Only the following database engines are approved for projects in Labs:
 
 All other database engines are prohibited, including:
 
-- MongoDB, DynamoDB, SQLite, MySQL, DB2
+-   MongoDB, DynamoDB, SQLite, MySQL, DB2
 
 Rationale:
 
-- We restrict database engine use in Lambda Labs so that we can focus our resources
-  on a subset of available technologies. By narrowing the field of choices, we feel
-  that product quality will be improved through the sharing of common knowledge and
-  reusable components.
+-   We restrict database engine use in Lambda Labs so that we can focus our resources
+    on a subset of available technologies. By narrowing the field of choices, we feel
+    that product quality will be improved through the sharing of common knowledge and
+    reusable components.
 
 Exceptions:
 
-- None
+-   None

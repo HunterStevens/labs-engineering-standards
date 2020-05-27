@@ -6,12 +6,12 @@ All branches must be created from the `master` branch
 
 Rationale:
 
-- Multiple levels of branching from the `master` branch can create opportunities
-  for merge conflicts
+-   Multiple levels of branching from the `master` branch can create opportunities
+    for merge conflicts
 
 Exceptions:
 
-- None
+-   None
 
 ## (GT-200) Feature Branch Naming
 
@@ -25,12 +25,12 @@ address in their profile, the branch should be named `feature/change-email`
 
 Rationale:
 
-- Without a good naming convention, it is very easy to lose track of the purpose
-  of a branch
+-   Without a good naming convention, it is very easy to lose track of the purpose
+    of a branch
 
 Exceptions:
 
-- None
+-   None
 
 ## (GT-300) Delete Merged Branches
 
@@ -38,13 +38,13 @@ After a branch has been merged to master, it must be immediately deleted.
 
 Rationale:
 
-- Short-lived branches are a best-practice for minimizing merge conflicts.
-  Leaving many branches active in a repository makes it difficult for team members
-  to navigate the ongoing work. Once a branch has been reviewed, approved, and merged
-  into the `master` branch, it should be immediately deleted.
-- A healthy Git repository has a minimum of active branches.
-- This is [easy to comply with using GitHub](https://help.github.com/en/github/administering-a-repository/managing-the-automatic-deletion-of-branches).
+-   Short-lived branches are a best-practice for minimizing merge conflicts.
+    Leaving many branches active in a repository makes it difficult for team members
+    to navigate the ongoing work. Once a branch has been reviewed, approved, and merged
+    into the `master` branch, it should be immediately deleted.
+-   A healthy Git repository has a minimum of active branches.
+-   This is [easy to comply with using GitHub](https://help.github.com/en/github/administering-a-repository/managing-the-automatic-deletion-of-branches).
 
 Exceptions:
 
-- None
+-   None

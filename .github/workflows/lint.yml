@@ -1,0 +1,26 @@
+name: Linting
+on:
+    pull_request:
+
+jobs:
+    lint:
+        name: Lint
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout current branch
+              uses: actions/checkout@v2
+              with:
+                  # Make sure the actual branch is checked out when running on pull requests
+                  ref: ${{ github.head_ref }}
+
+            - name: Prettier check
+              uses: creyD/prettier_action@v2.2
+              with:
+                  dry: true
+                  prettier_options: --check **/*.{md,yml}
+
+            - name: Markdownlint check
+              uses: nosborn/github-action-markdown-cli@v1.1.1
+              with:
+                  files: .
+                  config_file: ".markdownlint.json"
