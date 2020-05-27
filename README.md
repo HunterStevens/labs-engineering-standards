@@ -1,8 +1,8 @@
 # Labs Engineering Standards
 
+[](https://github.com/Lambda-School-Labs/labs-engineering-standards/workflows/Linting/badge.svg?branch=master)
+[](https://github.com/Lambda-School-Labs/labs-engineering-standards/workflows/Publishing/badge.svg?branch=master)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-
-![Publish docs via GitHub Pages](https://github.com/Lambda-School-Labs/labs-engineering-standards/workflows/Publish%20docs%20via%20GitHub%20Pages/badge.svg)
 
 This repository contains the [Lambda School](https://lambdaschool.com/) Labs
 Engineering Standards documentation. The documentation is in [MarkDown](https://daringfireball.net/projects/markdown/)
