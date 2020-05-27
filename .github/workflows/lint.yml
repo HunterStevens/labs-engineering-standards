@@ -1,10 +1,10 @@
-name: Check
+name: Linting
 on:
     pull_request:
 
 jobs:
     lint:
-        name: Linting
+        name: Lint
         runs-on: ubuntu-latest
         steps:
             - name: Checkout current branch
