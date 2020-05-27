@@ -12,38 +12,38 @@ copyright: © Lambda School
 
 # Configuration
 theme:
-  name: "material"
-  logo: images/Lambda_Shield_Red.png
-  language: en
+    name: "material"
+    logo: images/Lambda_Shield_Red.png
+    language: en
 
 extra_css:
-  - stylesheets/extra.css
+    - stylesheets/extra.css
 
 markdown_extensions:
-  - tables
-  - admonition
-  - codehilite
-  - toc:
-      permalink: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.inlinehilite
+    - tables
+    - admonition
+    - codehilite
+    - toc:
+          permalink: true
+    - pymdownx.betterem:
+          smart_enable: all
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.inlinehilite
 
 nav:
-  - Home: "index.md"
-  - AWS: topics/aws.md
-  - Code Quality: topics/code-quality.md
-  - Data Persistence: topics/data-persistence.md
-  - Developer Workflow: topics/developer-workflow.md
-  - Git: topics/git.md
-  - GitHub: topics/github.md
-  - Heroku: topics/heroku.md
-  - Node.js: topics/node-js.md
-  - Programming Languages: topics/programming-languages.md
-  - React: topics/react.md
-  - Security: topics/security.md
-  - Third Party Services: topics/third-party-services.md
-  - Web API Frameworks: topics/web-api-frameworks.md
-  - Writing Standards: topics/writing-standards.md
+    - Home: "index.md"
+    - AWS: topics/aws.md
+    - Code Quality: topics/code-quality.md
+    - Data Persistence: topics/data-persistence.md
+    - Developer Workflow: topics/developer-workflow.md
+    - Git: topics/git.md
+    - GitHub: topics/github.md
+    - Heroku: topics/heroku.md
+    - Node.js: topics/node-js.md
+    - Programming Languages: topics/programming-languages.md
+    - React: topics/react.md
+    - Security: topics/security.md
+    - Third Party Services: topics/third-party-services.md
+    - Web API Frameworks: topics/web-api-frameworks.md
+    - Writing Standards: topics/writing-standards.md
