@@ -480,17 +480,21 @@
 <h2 id="nj-100-approved-package-managers">(NJ-100) Approved Package Managers<a class="headerlink" href="#nj-100-approved-package-managers" title="Permanent link">&para;</a></h2>
 <p>Only the following Node.js package managers are approved for projects in Labs:</p>
 <ul>
-<li><a href="https://docs.npmjs.com/">NPM</a></li>
+<li><a href="https://docs.npmjs.com/">NPM</a><ul>
 <li>Version &gt; 6.0.0</li>
-<li><a href="https://yarnpkg.com/">Yarn</a></li>
+</ul>
+</li>
+<li><a href="https://yarnpkg.com/">Yarn</a><ul>
 <li>Version &gt; 2.0.0</li>
 <li><em>Preferred</em></li>
+</ul>
+</li>
 </ul>
 <p>Rationale:</p>
 <ul>
 <li>Well executed package management is crucial to the realization of a stable
-  and consistent Node-based product. Only mature and stable package managers are
-  permitted on Labs projects.</li>
+    and consistent Node-based product. Only mature and stable package managers are
+    permitted on Labs projects.</li>
 </ul>
 <p>Alternatives:</p>
 <ul>
@@ -503,8 +507,10 @@
 <h2 id="nj-200-approved-testing-frameworks">(NJ-200) Approved Testing Frameworks<a class="headerlink" href="#nj-200-approved-testing-frameworks" title="Permanent link">&para;</a></h2>
 <p>Only the following Node.js testing frameworks are approved for projects in Labs:</p>
 <ul>
-<li><a href="https://jestjs.io/">Jest</a></li>
+<li><a href="https://jestjs.io/">Jest</a><ul>
 <li>Version &gt; 25</li>
+</ul>
+</li>
 </ul>
 <p>Not permitted:</p>
 <ul>
@@ -513,10 +519,10 @@
 <p>Rationale:</p>
 <ul>
 <li>While there are many valid ways to test a Node.js based application, we want
-  limit the test frameworks in use so that we can maximize the opportunity for
-  sharing of knowledge and tools.</li>
+    limit the test frameworks in use so that we can maximize the opportunity for
+    sharing of knowledge and tools.</li>
 <li>Jest provides a robust and well-supported feature set that allows it to perform
-  many different tasks without requiring a lot of additional libraries.</li>
+    many different tasks without requiring a lot of additional libraries.</li>
 </ul>
 <p>Alternatives:</p>
 <ul>
@@ -529,8 +535,8 @@
 <p>Notes:</p>
 <ul>
 <li>This standard does <em>not</em> exclude the use of various Jest plugins or compatible
-  utility packages. For example, using SuperTest with Jest is perfectly acceptable
-  as Jest is still the underlying test framework and SuperTest is simply an augmentation.</li>
+    utility packages. For example, using SuperTest with Jest is perfectly acceptable
+    as Jest is still the underlying test framework and SuperTest is simply an augmentation.</li>
 </ul>
 <h2 id="nj-300-always-commit-lock-files">(NJ-300) Always Commit Lock Files<a class="headerlink" href="#nj-300-always-commit-lock-files" title="Permanent link">&para;</a></h2>
 <p>Package manager lock files must <em>always</em> be committed to source control:</p>
@@ -541,8 +547,8 @@
 <p>Rationale:</p>
 <ul>
 <li>The purpose of package manager lock files is to maintain consistency between
-  environments (developers, production, etc). The only way this works is to try
-  to ensure that lock files are distributed along with your code.</li>
+    environments (developers, production, etc). The only way this works is to try
+    to ensure that lock files are distributed along with your code.</li>
 </ul>
 <p>Alternatives:</p>
 <ul>

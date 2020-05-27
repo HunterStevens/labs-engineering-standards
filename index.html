@@ -553,27 +553,37 @@ ratified by approval from 3 Labs Tech Leads.</p>
 
 
 <ol>
-<li>Install all dependencies and set up a python virtual env</li>
+<li>Install all dependencies and set up a python virtual env<ul>
 <li><code>&gt; pipenv install --dev</code></li>
-<li>Start a pipenv shell</li>
+</ul>
+</li>
+<li>Start a pipenv shell<ul>
 <li><code>&gt; pipenv shell</code></li>
-<li>Run the mkdocs server to build and view you local changes</li>
+</ul>
+</li>
+<li>Run the mkdocs server to build and view you local changes<ul>
 <li><code>&gt; mkdocs serve</code></li>
 <li>Now open browser to <code>http://localhost:8000</code></li>
-<li>Install markdown linter</li>
+</ul>
+</li>
+<li>Install markdown linter<ul>
 <li><code>&gt; npm install -g markdownlint-cli</code></li>
+</ul>
+</li>
 <li>
 <p>Run the markdown linter before commiting</p>
-</li>
-<li>
-<p><code>&gt; markdownlint -c .markdownlint.json .</code></p>
+<ul>
+<li><code>&gt; markdownlint -c .markdownlint.json .</code></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+</div>
+<p>Please be aware that the <code>mkdocs serve</code> command serves the files
+directly from the docs folder and does not build the <code>site</code> folder
+as does the <code>mkdocs build</code> command. This means that relative paths
+may cause a warning.</p>
 </li>
 </ol>
-<p>!!! Warning
-   Please be aware that the <code>mkdocs serve</code> command serves the files
-   directly from the docs folder and does not build the <code>site</code> folder
-   as does the <code>mkdocs build</code> command. This means that relative paths
-   may cause a warning.</p>
                 
               
               

@@ -452,16 +452,24 @@
 <h2 id="aw-100-approved-aws-services">(AW-100) Approved AWS Services<a class="headerlink" href="#aw-100-approved-aws-services" title="Permanent link">&para;</a></h2>
 <p>The only permitted AWS services for Lambda School Labs projects are listed below:</p>
 <ul>
-<li>Amplify</li>
+<li>Amplify<ul>
 <li>Front-end hosting of Single Page Apps (SPA) only</li>
-<li>Elastic Beanstalk</li>
+</ul>
+</li>
+<li>Elastic Beanstalk<ul>
 <li>Data Science API deployments only</li>
-<li>Sagemaker</li>
+</ul>
+</li>
+<li>Sagemaker<ul>
 <li>Data Science only</li>
-<li>S3</li>
+</ul>
+</li>
+<li>S3<ul>
 <li>Public asset storage</li>
 <li>User uploads via signed URLs</li>
 <li>Data storage for DS teams</li>
+</ul>
+</li>
 </ul>
 <p>All others are prohibited from use.</p>
 <p>Note: These services utilize many underlying services, which are permitted only
@@ -469,7 +477,7 @@ when provisioned by the orchestration services listed above.</p>
 <p>Rationale:</p>
 <ul>
 <li>AWS is <em>very</em> deep, with many different services and components. That complexity
-  needs careful controls to reduce risk and cost.</li>
+    needs careful controls to reduce risk and cost.</li>
 </ul>
 <p>Alternatives:</p>
 <ul>

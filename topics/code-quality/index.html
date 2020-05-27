@@ -495,80 +495,88 @@
 <p>Requirements:</p>
 <ul>
 <li>All repositories <em>must</em> maintain their <code>master</code> branch at a Code Climate maintainability
-  score of B or above.</li>
+    score of B or above.</li>
 <li>This score <em>must</em> be updated immediately after code is merged into the <code>master</code>
-  branch.</li>
+    branch.</li>
 <li>The maintainability score must be displayed near the top of the README at the
-  root of the repository.</li>
+    root of the repository.</li>
 </ul>
 <p>Rationale:</p>
 <ul>
 <li>Code Climate provides a robust and industry-standard measure for the
-  maintainability of a codebase. While this is only one of many possible
-  measures, Code Climate provides a solid baseline for measuring code quality.</li>
+    maintainability of a codebase. While this is only one of many possible
+    measures, Code Climate provides a solid baseline for measuring code quality.</li>
 </ul>
 <p>Exceptions:</p>
 <ul>
-<li>The following types of repositories are excluded from this standard:</li>
+<li>The following types of repositories are excluded from this standard:<ul>
 <li>Data science repositories containing only Jupyter Notebooks</li>
 <li>Static websites not containing any code</li>
 <li>Repos containing only programming languages not supported by Code Climate</li>
-<li>The following types of code can be excluded from your maintainability score:</li>
+</ul>
+</li>
+<li>The following types of code can be excluded from your maintainability score:<ul>
 <li>Test code</li>
 <li>Data migration code</li>
 <li>Generated code</li>
+</ul>
+</li>
 <li>In addition to the above exclusions, the following filter settings may be used
-  by all projects. Any additional filters require approval from an engineering
-  manager.
-  <div class="highlight"><pre><span></span><code><span class="c1"># .codeclimate.yml</span>
+    by all projects. Any additional filters require approval from an engineering
+    manager.
+    <div class="highlight"><pre><span></span><code><span class="c1"># .codeclimate.yml</span>
 <span class="nt">version</span><span class="p">:</span> <span class="s">&quot;2&quot;</span>
 <span class="nt">checks</span><span class="p">:</span>
-  <span class="c1"># Disable checks for similar code.</span>
-  <span class="c1"># Because this creates too many false positives.</span>
-  <span class="nt">similar-code</span><span class="p">:</span>
-    <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-  <span class="c1"># Increase the number of lines allowed for a method.</span>
-  <span class="c1"># Because this is more reasonable for JavaScript.</span>
-  <span class="nt">method-lines</span><span class="p">:</span>
-    <span class="nt">config</span><span class="p">:</span>
-      <span class="nt">threshold</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">50</span>
+    <span class="c1"># Disable checks for similar code.</span>
+    <span class="c1"># Because this creates too many false positives.</span>
+    <span class="nt">similar-code</span><span class="p">:</span>
+        <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+    <span class="c1"># Increase the number of lines allowed for a method.</span>
+    <span class="c1"># Because this is more reasonable for JavaScript.</span>
+    <span class="nt">method-lines</span><span class="p">:</span>
+        <span class="nt">config</span><span class="p">:</span>
+            <span class="nt">threshold</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">50</span>
 <span class="nt">exclude_patterns</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;tests/&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;spec/&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;**/*.spec.js&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;**/*.spec.jsx&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;**/*.spec.ts&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;**/*.spec.tsx&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;**/vendor/&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;**/node_modules/&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;tests/&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;spec/&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;**/*.spec.js&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;**/*.spec.jsx&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;**/*.spec.ts&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;**/*.spec.tsx&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;**/vendor/&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;**/node_modules/&quot;</span>
 </code></pre></div></li>
 </ul>
 <h2 id="cq-110-robust-test-coverage">(CQ-110) Robust Test Coverage<a class="headerlink" href="#cq-110-robust-test-coverage" title="Permanent link">&para;</a></h2>
 <p>Requirements:</p>
 <ul>
 <li>All repositories are required to maintain a code coverage level of 40%
-  or higher for their <code>master</code> branch.</li>
+    or higher for their <code>master</code> branch.</li>
 <li>Code coverage percentage <em>must</em> be published whenever code is pushed
-  into the <code>master</code> branch.</li>
+    into the <code>master</code> branch.</li>
 <li>The code coverage percentage must be displayed near the top of the README at the
-  root of the repository.</li>
+    root of the repository.</li>
 <li>All application code <em>must</em> be included in the coverage percentage, even if tests
-  have yet to be written for the code.</li>
+    have yet to be written for the code.</li>
 </ul>
 <p>Rationale:</p>
 <ul>
 <li>Code coverage is an indicator of how well test cases cover the codebase. While
-  not a singular indicator of test quality, it is an important factor in ensuring
-  that test cases cover a wide area of the codebase.</li>
+    not a singular indicator of test quality, it is an important factor in ensuring
+    that test cases cover a wide area of the codebase.</li>
 </ul>
 <p>Exceptions:</p>
 <ul>
-<li>The following types of repositories are excluded from this standard:</li>
+<li>The following types of repositories are excluded from this standard:<ul>
 <li>Data science repositories containing only Jupyter Notebooks</li>
 <li>Static websites not containing any code</li>
-<li>The following code can be excluded from your test coverage percentage:</li>
+</ul>
+</li>
+<li>The following code can be excluded from your test coverage percentage:<ul>
 <li>Test code</li>
 <li>Data migration code</li>
+</ul>
+</li>
 </ul>
 <h2 id="cq-120-code-cleanliness">(CQ-120) Code Cleanliness<a class="headerlink" href="#cq-120-code-cleanliness" title="Permanent link">&para;</a></h2>
 <p>When code is no longer wanted, delete it. Never commit commented out code.</p>
@@ -577,7 +585,7 @@
 <ul>
 <li>Standard git usage already tracks removed code so that it's not lost.</li>
 <li>Leaving commented code leave the code base <code>littered</code> with distractions to
-  the actual code flow.</li>
+    the actual code flow.</li>
 </ul>
 <p>Exceptions:</p>
 <ul>
@@ -589,10 +597,12 @@ over time during runtime.</p>
 <p>This includes:</p>
 <ul>
 <li>URLs</li>
-<li>User data</li>
+<li>User data<ul>
 <li>Email addresses</li>
 <li>Usernames</li>
 <li>Addresses</li>
+</ul>
+</li>
 <li>Identifiers for accessing external resources (e.g. OAuth Client ID)</li>
 </ul>
 <p>Data must <em>always</em> be stored in an external persistent store, like a database, or
@@ -601,11 +611,11 @@ consider using a database or environment variable to pass data to a program.</p>
 <p>Rationale:</p>
 <ul>
 <li>Data changes over time and if you hardcode it, you will need to redeploy your
-  application to update the data. If you use a database or environment
-  variable, you can change the data without requiring a new deployment.</li>
+    application to update the data. If you use a database or environment
+    variable, you can change the data without requiring a new deployment.</li>
 <li>While hardcoded data may not qualify as a secret, it still may be considered
-  sensitive. For example, a hardcoded email address can be easily discovered in
-  GitHub and used to send spam or for phishing attacks.</li>
+    sensitive. For example, a hardcoded email address can be easily discovered in
+    GitHub and used to send spam or for phishing attacks.</li>
 </ul>
 <p>Exceptions:</p>
 <ul>
