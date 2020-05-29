@@ -25,6 +25,8 @@ Exceptions:
 
 ## (RE-200) Approved Testing Frameworks
 
+-   [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
+    -   Version > 10.0.0
 -   [Cypress](https://www.cypress.io/)
     -   Version > 4.0.0
 
