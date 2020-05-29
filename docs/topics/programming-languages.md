@@ -39,7 +39,7 @@ Exceptions:
 | Node.js          | > 12               |
 | Express          | > 4.17.0           |
 | Android SDK      | > 10               |
-| React Native     | > 0.60             |
+| React Native     | None               | Prohibited |
 | Flask            | > 1.0              |
 
 Rationale:
