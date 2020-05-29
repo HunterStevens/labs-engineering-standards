@@ -1,7 +1,7 @@
 # Labs Engineering Standards
 
-![](https://github.com/Lambda-School-Labs/labs-engineering-standards/workflows/Linting/badge.svg)
-![](https://github.com/Lambda-School-Labs/labs-engineering-standards/workflows/Publishing/badge.svg)
+![Linting Badge](https://github.com/Lambda-School-Labs/labs-engineering-standards/workflows/Linting/badge.svg)
+![Publishing Badge](https://github.com/Lambda-School-Labs/labs-engineering-standards/workflows/Publishing/badge.svg)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 This repository contains the [Lambda School](https://lambdaschool.com/) Labs
