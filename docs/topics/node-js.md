@@ -4,17 +4,17 @@
 
 Only the following Node.js package managers are approved for projects in Labs:
 
--   [NPM](https://docs.npmjs.com/)
-    -   Version > 6.0.0
 -   [Yarn](https://yarnpkg.com/)
     -   Version > 2.0.0
-    -   _Preferred_
 
 Rationale:
 
 -   Well executed package management is crucial to the realization of a stable
-    and consistent Node-based product. Only mature and stable package managers are
-    permitted on Labs projects.
+    and consistent Node-based product. It is important for all students and staff to be on the same package management tool for consistency and continuous support. Yarn is very widely used in the `React Ecosystem` and as a result we want to standardize across the stack.
+
+Not Permitted:
+
+-   [NPM](https://docs.npmjs.com/)
 
 Alternatives:
 
@@ -61,7 +61,6 @@ Notes:
 
 Package manager lock files must _always_ be committed to source control:
 
--   [package-lock.json](https://docs.npmjs.com/files/package-lock.json)
 -   [yarn.lock](https://classic.yarnpkg.com/blog/2016/11/24/lockfiles-for-all/)
 
 Rationale:

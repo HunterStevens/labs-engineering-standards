@@ -61,7 +61,7 @@ All steps below are based on the use of [pipenv](https://pipenv.kennethreitz.org
     - `> mkdocs serve`
     - Now open browser to `http://localhost:8000`
 4. Install markdown linter
-    - `> npm install -g markdownlint-cli`
+    - `> yarn install -g markdownlint-cli`
 5. Run the markdown linter before commiting
 
     - `> markdownlint -c .markdownlint.json .`
