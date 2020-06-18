@@ -2,14 +2,14 @@ name: Publishing
 on:
     push:
         branches:
-            - master
+            - main
 
 jobs:
     publish:
         name: Publish
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout master
+            - name: Checkout main
               uses: actions/checkout@v2
 
             - name: Install Python

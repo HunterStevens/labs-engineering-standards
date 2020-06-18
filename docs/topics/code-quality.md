@@ -4,9 +4,9 @@
 
 Requirements:
 
--   All repositories _must_ maintain their `master` branch at a Code Climate maintainability
+-   All repositories _must_ maintain their `main` branch at a Code Climate maintainability
     score of B or above.
--   This score _must_ be updated immediately after code is merged into the `master`
+-   This score _must_ be updated immediately after code is merged into the `main`
     branch.
 -   The maintainability score must be displayed near the top of the README at the
     root of the repository.
@@ -59,9 +59,9 @@ Exceptions:
 Requirements:
 
 -   All repositories are required to maintain a code coverage level of 40%
-    or higher for their `master` branch.
+    or higher for their `main` branch.
 -   Code coverage percentage _must_ be published whenever code is pushed
-    into the `master` branch.
+    into the `main` branch.
 -   The code coverage percentage must be displayed near the top of the README at the
     root of the repository.
 -   All application code _must_ be included in the coverage percentage, even if tests

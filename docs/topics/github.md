@@ -134,10 +134,10 @@ Exceptions:
 
 -   None
 
-## (GH-311) Require GitHub Branch Protection setup for the master branch
+## (GH-311) Require GitHub Branch Protection setup for the main branch
 
 All GitHub repositories must be setup with [branch protection](https://help.github.com/en/github/administering-a-repository/about-protected-branches)
-enabled for the `master` branch as follows:
+enabled for the `main` branch as follows:
 
 -   Required approving reviews: 2 (or more)
 -   Require status checks to be passing before merging (enabled)
@@ -146,9 +146,9 @@ enabled for the `master` branch as follows:
 
 Rationale:
 
--   The `master` branch is a direct reflection of the code that is deployed to
+-   The `main` branch is a direct reflection of the code that is deployed to
     the production environment. As such, it is crucial that all code headed to
-    the `master` branch be carefully reviewed and tested before a merge.
+    the `main` branch be carefully reviewed and tested before a merge.
 
 Exceptions:
 
