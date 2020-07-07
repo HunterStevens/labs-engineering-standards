@@ -6,9 +6,11 @@ Only the following Node.js package managers are approved for projects in Labs:
 
 -   [NPM](https://docs.npmjs.com/)
     -   Version > 6.0.0
+
+Not permitted:
+
 -   [Yarn](https://yarnpkg.com/)
-    -   Version > 2.0.0
-    -   _Preferred_
+    -   Yarn was created to solve problems in NPM, now that npm has solved those problems it's not as valuable.
 
 Rationale:
 
