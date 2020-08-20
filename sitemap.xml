@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
-     <loc>https://labs.lambdaschool.com/</loc>
+     <loc>https://labs.lambdaschool.com/standards/</loc>
      <lastmod>2020-08-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://labs.lambdaschool.com/topics/aws/</loc>
+     <loc>https://labs.lambdaschool.com/standards/topics/aws/</loc>
      <lastmod>2020-08-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://labs.lambdaschool.com/topics/code-quality/</loc>
+     <loc>https://labs.lambdaschool.com/standards/topics/code-quality/</loc>
      <lastmod>2020-08-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://labs.lambdaschool.com/topics/data-persistence/</loc>
+     <loc>https://labs.lambdaschool.com/standards/topics/data-persistence/</loc>
      <lastmod>2020-08-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://labs.lambdaschool.com/topics/developer-workflow/</loc>
+     <loc>https://labs.lambdaschool.com/standards/topics/developer-workflow/</loc>
      <lastmod>2020-08-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://labs.lambdaschool.com/topics/git/</loc>
+     <loc>https://labs.lambdaschool.com/standards/topics/git/</loc>
      <lastmod>2020-08-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://labs.lambdaschool.com/topics/github/</loc>
+     <loc>https://labs.lambdaschool.com/standards/topics/github/</loc>
      <lastmod>2020-08-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://labs.lambdaschool.com/topics/heroku/</loc>
+     <loc>https://labs.lambdaschool.com/standards/topics/heroku/</loc>
      <lastmod>2020-08-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://labs.lambdaschool.com/topics/node-js/</loc>
+     <loc>https://labs.lambdaschool.com/standards/topics/node-js/</loc>
      <lastmod>2020-08-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://labs.lambdaschool.com/topics/programming-languages/</loc>
+     <loc>https://labs.lambdaschool.com/standards/topics/programming-languages/</loc>
      <lastmod>2020-08-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://labs.lambdaschool.com/topics/react/</loc>
+     <loc>https://labs.lambdaschool.com/standards/topics/react/</loc>
      <lastmod>2020-08-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://labs.lambdaschool.com/topics/security/</loc>
+     <loc>https://labs.lambdaschool.com/standards/topics/security/</loc>
      <lastmod>2020-08-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://labs.lambdaschool.com/topics/third-party-services/</loc>
+     <loc>https://labs.lambdaschool.com/standards/topics/third-party-services/</loc>
      <lastmod>2020-08-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://labs.lambdaschool.com/topics/web-api-frameworks/</loc>
+     <loc>https://labs.lambdaschool.com/standards/topics/web-api-frameworks/</loc>
      <lastmod>2020-08-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://labs.lambdaschool.com/topics/writing-standards/</loc>
+     <loc>https://labs.lambdaschool.com/standards/topics/writing-standards/</loc>
      <lastmod>2020-08-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
