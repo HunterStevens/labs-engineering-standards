@@ -1,0 +1,711 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Engineering Standards for Lambda School Labs">
+      
+      
+        <link rel="canonical" href="https://labs.lambdaschool.com/topics/code-quality/">
+      
+      
+        <meta name="author" content="Lambda School Labs">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.1">
+    
+    
+      
+        <title>Code Quality - Labs Engineering Standards</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a676eddb.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#code-quality" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://labs.lambdaschool.com/" title="Labs Engineering Standards" class="md-header-nav__button md-logo" aria-label="Labs Engineering Standards">
+      
+  <img src="../../images/Lambda_Shield_Red.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Labs Engineering Standards
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Code Quality
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/Lambda-School-Labs/labs-engineering-standards/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Lambda-School-Labs/labs-engineering-standards
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://labs.lambdaschool.com/" title="Labs Engineering Standards" class="md-nav__button md-logo" aria-label="Labs Engineering Standards">
+      
+  <img src="../../images/Lambda_Shield_Red.png" alt="logo">
+
+    </a>
+    Labs Engineering Standards
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/Lambda-School-Labs/labs-engineering-standards/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Lambda-School-Labs/labs-engineering-standards
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aws/" title="AWS" class="md-nav__link">
+      AWS
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Code Quality
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Code Quality" class="md-nav__link md-nav__link--active">
+      Code Quality
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cq-100-high-maintainability" class="md-nav__link">
+    (CQ-100) High Maintainability
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cq-110-robust-test-coverage" class="md-nav__link">
+    (CQ-110) Robust Test Coverage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cq-120-code-cleanliness" class="md-nav__link">
+    (CQ-120) Code Cleanliness
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cq-130-never-hardcode-data" class="md-nav__link">
+    (CQ-130) Never Hardcode Data
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../data-persistence/" title="Data Persistence" class="md-nav__link">
+      Data Persistence
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../developer-workflow/" title="Developer Workflow" class="md-nav__link">
+      Developer Workflow
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../github/" title="GitHub" class="md-nav__link">
+      GitHub
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../heroku/" title="Heroku" class="md-nav__link">
+      Heroku
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../node-js/" title="Node.js" class="md-nav__link">
+      Node.js
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../programming-languages/" title="Programming Languages" class="md-nav__link">
+      Programming Languages
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../react/" title="React" class="md-nav__link">
+      React
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../security/" title="Security" class="md-nav__link">
+      Security
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../third-party-services/" title="Third Party Services" class="md-nav__link">
+      Third Party Services
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../web-api-frameworks/" title="Web API Frameworks" class="md-nav__link">
+      Web API Frameworks
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../writing-standards/" title="Writing Standards" class="md-nav__link">
+      Writing Standards
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cq-100-high-maintainability" class="md-nav__link">
+    (CQ-100) High Maintainability
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cq-110-robust-test-coverage" class="md-nav__link">
+    (CQ-110) Robust Test Coverage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cq-120-code-cleanliness" class="md-nav__link">
+    (CQ-120) Code Cleanliness
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cq-130-never-hardcode-data" class="md-nav__link">
+    (CQ-130) Never Hardcode Data
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/Lambda-School-Labs/labs-engineering-standards/edit/master/docs/topics/code-quality.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                <h1 id="code-quality">Code Quality<a class="headerlink" href="#code-quality" title="Permanent link">&para;</a></h1>
+<h2 id="cq-100-high-maintainability">(CQ-100) High Maintainability<a class="headerlink" href="#cq-100-high-maintainability" title="Permanent link">&para;</a></h2>
+<p>Requirements:</p>
+<ul>
+<li>All repositories <em>must</em> maintain their <code>main</code> branch at a Code Climate maintainability
+    score of B or above.</li>
+<li>This score <em>must</em> be updated immediately after code is merged into the <code>main</code>
+    branch.</li>
+<li>The maintainability score must be displayed near the top of the README at the
+    root of the repository.</li>
+</ul>
+<p>Rationale:</p>
+<ul>
+<li>Code Climate provides a robust and industry-standard measure for the
+    maintainability of a codebase. While this is only one of many possible
+    measures, Code Climate provides a solid baseline for measuring code quality.</li>
+</ul>
+<p>Exceptions:</p>
+<ul>
+<li>The following types of repositories are excluded from this standard:<ul>
+<li>Data science repositories containing only Jupyter Notebooks</li>
+<li>Static websites not containing any code</li>
+<li>Repos containing only programming languages not supported by Code Climate</li>
+</ul>
+</li>
+<li>The following types of code can be excluded from your maintainability score:<ul>
+<li>Test code</li>
+<li>Data migration code</li>
+<li>Generated code</li>
+</ul>
+</li>
+<li>In addition to the above exclusions, the following filter settings may be used
+    by all projects. Any additional filters require approval from an engineering
+    manager.
+    <div class="highlight"><pre><span></span><code><span class="c1"># .codeclimate.yml</span>
+<span class="nt">version</span><span class="p">:</span> <span class="s">&quot;2&quot;</span>
+<span class="nt">checks</span><span class="p">:</span>
+    <span class="c1"># Disable checks for similar code.</span>
+    <span class="c1"># Because this creates too many false positives.</span>
+    <span class="nt">similar-code</span><span class="p">:</span>
+        <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+    <span class="c1"># Increase the number of lines allowed for a method.</span>
+    <span class="c1"># Because this is more reasonable for JavaScript.</span>
+    <span class="nt">method-lines</span><span class="p">:</span>
+        <span class="nt">config</span><span class="p">:</span>
+            <span class="nt">threshold</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">50</span>
+<span class="nt">exclude_patterns</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;tests/&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;spec/&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;**/*.spec.js&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;**/*.spec.jsx&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;**/*.spec.ts&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;**/*.spec.tsx&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;**/vendor/&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;**/node_modules/&quot;</span>
+</code></pre></div></li>
+</ul>
+<h2 id="cq-110-robust-test-coverage">(CQ-110) Robust Test Coverage<a class="headerlink" href="#cq-110-robust-test-coverage" title="Permanent link">&para;</a></h2>
+<p>Requirements:</p>
+<ul>
+<li>All repositories are required to maintain a code coverage level of 40%
+    or higher for their <code>main</code> branch.</li>
+<li>Code coverage percentage <em>must</em> be published whenever code is pushed
+    into the <code>main</code> branch.</li>
+<li>The code coverage percentage must be displayed near the top of the README at the
+    root of the repository.</li>
+<li>All application code <em>must</em> be included in the coverage percentage, even if tests
+    have yet to be written for the code.</li>
+</ul>
+<p>Rationale:</p>
+<ul>
+<li>Code coverage is an indicator of how well test cases cover the codebase. While
+    not a singular indicator of test quality, it is an important factor in ensuring
+    that test cases cover a wide area of the codebase.</li>
+</ul>
+<p>Exceptions:</p>
+<ul>
+<li>The following types of repositories are excluded from this standard:<ul>
+<li>Data science repositories containing only Jupyter Notebooks</li>
+<li>Static websites not containing any code</li>
+</ul>
+</li>
+<li>The following code can be excluded from your test coverage percentage:<ul>
+<li>Test code</li>
+<li>Data migration code</li>
+</ul>
+</li>
+</ul>
+<h2 id="cq-120-code-cleanliness">(CQ-120) Code Cleanliness<a class="headerlink" href="#cq-120-code-cleanliness" title="Permanent link">&para;</a></h2>
+<p>When code is no longer wanted, delete it. Never commit commented out code.</p>
+<p>Pull requests should not be approved until these comments have been removed.</p>
+<p>Rationale:</p>
+<ul>
+<li>Standard git usage already tracks removed code so that it's not lost.</li>
+<li>Leaving commented code leave the code base <code>littered</code> with distractions to
+    the actual code flow.</li>
+</ul>
+<p>Exceptions:</p>
+<ul>
+<li>None</li>
+</ul>
+<h2 id="cq-130-never-hardcode-data">(CQ-130) Never Hardcode Data<a class="headerlink" href="#cq-130-never-hardcode-data" title="Permanent link">&para;</a></h2>
+<p>Data is anything that could potentially change between runtime environments or
+over time during runtime.</p>
+<p>This includes:</p>
+<ul>
+<li>URLs</li>
+<li>User data<ul>
+<li>Email addresses</li>
+<li>Usernames</li>
+<li>Addresses</li>
+</ul>
+</li>
+<li>Identifiers for accessing external resources (e.g. OAuth Client ID)</li>
+</ul>
+<p>Data must <em>always</em> be stored in an external persistent store, like a database, or
+passed to the program as an environment variable. When in doubt, you probably should
+consider using a database or environment variable to pass data to a program.</p>
+<p>Rationale:</p>
+<ul>
+<li>Data changes over time and if you hardcode it, you will need to redeploy your
+    application to update the data. If you use a database or environment
+    variable, you can change the data without requiring a new deployment.</li>
+<li>While hardcoded data may not qualify as a secret, it still may be considered
+    sensitive. For example, a hardcoded email address can be easily discovered in
+    GitHub and used to send spam or for phishing attacks.</li>
+</ul>
+<p>Exceptions:</p>
+<ul>
+<li>None</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../aws/" title="AWS" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                AWS
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../data-persistence/" title="Data Persistence" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Data Persistence
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" /></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © Lambda School
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.c51dfa35.min.js"></script>
+      <script src="../../assets/javascripts/bundle.eaaa3931.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.58d22e8e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
