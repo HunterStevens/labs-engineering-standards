@@ -33,18 +33,18 @@ markdown_extensions:
     - pymdownx.inlinehilite
 
 nav:
-    - Home: "index.md"
-    - AWS: topics/aws.md
-    - Code Quality: topics/code-quality.md
-    - Data Persistence: topics/data-persistence.md
-    - Developer Workflow: topics/developer-workflow.md
-    - Git: topics/git.md
-    - GitHub: topics/github.md
-    - Heroku: topics/heroku.md
-    - Node.js: topics/node-js.md
-    - Programming Languages: topics/programming-languages.md
-    - React: topics/react.md
-    - Security: topics/security.md
-    - Third Party Services: topics/third-party-services.md
-    - Web API Frameworks: topics/web-api-frameworks.md
-    - Writing Standards: topics/writing-standards.md
+    - Home: standards/index.md
+    - AWS: standards/topics/aws.md
+    - Code Quality: standards/topics/code-quality.md
+    - Data Persistence: standards/topics/data-persistence.md
+    - Developer Workflow: standards/topics/developer-workflow.md
+    - Git: standards/topics/git.md
+    - GitHub: standards/topics/github.md
+    - Heroku: standards/topics/heroku.md
+    - Node.js: standards/topics/node-js.md
+    - Programming Languages: standards/topics/programming-languages.md
+    - React: standards/topics/react.md
+    - Security: standards/topics/security.md
+    - Third Party Services: standards/topics/third-party-services.md
+    - Web API Frameworks: standards/topics/web-api-frameworks.md
+    - Writing Standards: standards/topics/writing-standards.md
