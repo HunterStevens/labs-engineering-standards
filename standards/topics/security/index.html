@@ -11,19 +11,21 @@
         <meta name="description" content="Engineering Standards for Lambda School Labs">
       
       
+        <link rel="canonical" href="https://labs.lambdaschool.com/standards/standards/topics/security/">
+      
       
         <meta name="author" content="Lambda School Labs">
       
-      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.1">
     
     
       
-        <title>React - Labs Engineering Standards</title>
+        <title>Security - Labs Engineering Standards</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.a676eddb.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a676eddb.min.css">
       
       
     
@@ -37,7 +39,7 @@
     
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
     
       
@@ -54,7 +56,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#react" class="md-skip">
+        <a href="#application-security" class="md-skip">
           Skip to content
         </a>
       
@@ -65,9 +67,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../.." title="Labs Engineering Standards" class="md-header-nav__button md-logo" aria-label="Labs Engineering Standards">
+    <a href="https://labs.lambdaschool.com/standards/" title="Labs Engineering Standards" class="md-header-nav__button md-logo" aria-label="Labs Engineering Standards">
       
-  <img src="../../images/Lambda_Shield_Red.png" alt="logo">
+  <img src="../../../images/Lambda_Shield_Red.png" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -81,7 +83,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              React
+              Security
             
           </span>
         </div>
@@ -151,9 +153,9 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Labs Engineering Standards" class="md-nav__button md-logo" aria-label="Labs Engineering Standards">
+    <a href="https://labs.lambdaschool.com/standards/" title="Labs Engineering Standards" class="md-nav__button md-logo" aria-label="Labs Engineering Standards">
       
-  <img src="../../images/Lambda_Shield_Red.png" alt="logo">
+  <img src="../../../images/Lambda_Shield_Red.png" alt="logo">
 
     </a>
     Labs Engineering Standards
@@ -180,7 +182,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Home" class="md-nav__link">
+    <a href="../../" title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -298,6 +300,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../react/" title="React" class="md-nav__link">
+      React
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -309,14 +323,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        React
+        Security
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
         </span>
       </label>
     
-    <a href="./" title="React" class="md-nav__link md-nav__link--active">
-      React
+    <a href="./" title="Security" class="md-nav__link md-nav__link--active">
+      Security
     </a>
     
       
@@ -335,15 +349,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#re-100-approved-state-management-frameworks" class="md-nav__link">
-    (RE-100) Approved State Management Frameworks
+  <a href="#sc-100-never-commit-secrets" class="md-nav__link">
+    (SC-100) Never Commit Secrets
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#re-200-approved-testing-frameworks" class="md-nav__link">
-    (RE-200) Approved Testing Frameworks
+  <a href="#sc-200-never-store-secrets" class="md-nav__link">
+    (SC-200) Never Store Secrets
   </a>
   
 </li>
@@ -352,18 +366,6 @@
   
 </nav>
     
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../security/" title="Security" class="md-nav__link">
-      Security
-    </a>
   </li>
 
     
@@ -429,15 +431,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#re-100-approved-state-management-frameworks" class="md-nav__link">
-    (RE-100) Approved State Management Frameworks
+  <a href="#sc-100-never-commit-secrets" class="md-nav__link">
+    (SC-100) Never Commit Secrets
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#re-200-approved-testing-frameworks" class="md-nav__link">
-    (RE-200) Approved Testing Frameworks
+  <a href="#sc-200-never-store-secrets" class="md-nav__link">
+    (SC-200) Never Store Secrets
   </a>
   
 </li>
@@ -454,7 +456,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Lambda-School-Labs/labs-engineering-standards/edit/master/docs/topics/react.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/Lambda-School-Labs/labs-engineering-standards/edit/master/docs/standards/topics/security.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>
                   </a>
                 
@@ -462,54 +464,41 @@
                   
                 
                 
-                <h1 id="react">React<a class="headerlink" href="#react" title="Permanent link">&para;</a></h1>
-<h2 id="re-100-approved-state-management-frameworks">(RE-100) Approved State Management Frameworks<a class="headerlink" href="#re-100-approved-state-management-frameworks" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://react-redux.js.org/">Redux</a><ul>
-<li>Version &gt; 7.1</li>
-</ul>
-</li>
-<li><a href="https://reactjs.org/docs/context.html">Context API</a><ul>
-<li>N/A</li>
-</ul>
-</li>
-</ul>
+                <h1 id="application-security">Application Security<a class="headerlink" href="#application-security" title="Permanent link">&para;</a></h1>
+<h2 id="sc-100-never-commit-secrets">(SC-100) Never Commit Secrets<a class="headerlink" href="#sc-100-never-commit-secrets" title="Permanent link">&para;</a></h2>
+<p>No secrets, credentials, or sensitive data shall ever be committed to a Git
+repository, either local or remote.</p>
 <p>Rationale:</p>
 <ul>
-<li>Within the landscape of React state management frameworks, there are many
-    viable solutions, none of which fit all scenarios. Therefore it is likely that
-    several frameworks will be permitted to meet the needs of various applications.</li>
+<li>Secrets provide access to administrative functions as well as protected data.
+    Exposing secrets in a repository is a primary attack vector for compromised
+    systems that are exploited every day on the internet. Secrets must be protected
+    at all times and are instantly at risk and exposed when committed into a source
+    code repository.</li>
 </ul>
 <p>Alternatives:</p>
 <ul>
-<li>None</li>
+<li>Communicating shared secrets should only be done via email or Slack. (Note:
+    This will change as we're working on making a secrets management tool available.)</li>
+<li>Use <a href="https://github.com/motdotla/dotenv">dotenv</a>
+    or an equivalent tool to put secrets into your local environment, which can
+    then be read by your application at runtime.</li>
 </ul>
-<p>Exceptions:</p>
-<ul>
-<li><a href="https://www.apollographql.com/docs/react/">Apollo Client</a><ul>
-<li>Version &gt; 2.6</li>
-<li>For use in accessing third party services</li>
-</ul>
-</li>
-</ul>
-<h2 id="re-200-approved-testing-frameworks">(RE-200) Approved Testing Frameworks<a class="headerlink" href="#re-200-approved-testing-frameworks" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://www.cypress.io/">Cypress</a><ul>
-<li>Version &gt; 4.0.0</li>
-</ul>
-</li>
-</ul>
+<h2 id="sc-200-never-store-secrets">(SC-200) Never Store Secrets<a class="headerlink" href="#sc-200-never-store-secrets" title="Permanent link">&para;</a></h2>
+<p>No software shall maintain user secrets in application storage.</p>
 <p>Rationale:</p>
 <ul>
-<li>These testing frameworks will cover the majority of use cases for Labs projects.</li>
+<li>Effectively storing and protecting secrets is extremely difficult and incurs
+    a great deal of design, development, and operational overhead.</li>
 </ul>
 <p>Alternatives:</p>
 <ul>
-<li>None</li>
+<li>Always use a trusted 3rd party Identity Provider (IdP) to authenticate users.</li>
 </ul>
 <p>Exceptions:</p>
 <ul>
-<li>None</li>
+<li>Non-user specific secrets (e.g. API keys, etc.) should be stored using secure
+    services and provided to the application at runtime using environment variables.</li>
 </ul>
                 
               
@@ -529,7 +518,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../programming-languages/" title="Programming Languages" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../react/" title="React" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
             </div>
@@ -538,19 +527,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Programming Languages
+                React
               </div>
             </div>
           </a>
         
         
-          <a href="../security/" title="Security" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../third-party-services/" title="Third Party Services" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Security
+                Third Party Services
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -581,15 +570,15 @@
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.c51dfa35.min.js"></script>
-      <script src="../../assets/javascripts/bundle.eaaa3931.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/vendor.c51dfa35.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.eaaa3931.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
-          base: "../..",
+          base: "../../..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.58d22e8e.min.js"
+            worker: "../../../assets/javascripts/worker/search.58d22e8e.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
