@@ -25,8 +25,8 @@ Exceptions:
 
 ## (RE-200) Approved Testing Frameworks
 
--   [Cypress](https://www.cypress.io/)
-    -   Version > 4.0.0
+-   [Jest](https://jestjs.io/)
+    -   combined with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
 
 Rationale:
 
