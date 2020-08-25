@@ -275,8 +275,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gt-100-only-branch-from-master" class="md-nav__link">
-    (GT-100) Only Branch from Master
+  <a href="#gt-50-use-main-as-your-primary-branch" class="md-nav__link">
+    (GT-50) Use 'main' as your primary branch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gt-100-only-branch-from-main" class="md-nav__link">
+    (GT-100) Only Branch from Main
   </a>
   
 </li>
@@ -436,8 +443,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gt-100-only-branch-from-master" class="md-nav__link">
-    (GT-100) Only Branch from Master
+  <a href="#gt-50-use-main-as-your-primary-branch" class="md-nav__link">
+    (GT-50) Use 'main' as your primary branch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gt-100-only-branch-from-main" class="md-nav__link">
+    (GT-100) Only Branch from Main
   </a>
   
 </li>
@@ -477,11 +491,22 @@
                 
                 
                 <h1 id="git">Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h1>
-<h2 id="gt-100-only-branch-from-master">(GT-100) Only Branch from Master<a class="headerlink" href="#gt-100-only-branch-from-master" title="Permanent link">&para;</a></h2>
-<p>All branches must be created from the <code>master</code> branch</p>
+<h2 id="gt-50-use-main-as-your-primary-branch">(GT-50) Use 'main' as your primary branch<a class="headerlink" href="#gt-50-use-main-as-your-primary-branch" title="Permanent link">&para;</a></h2>
+<p>All branches must be created from the <code>main</code> branch</p>
 <p>Rationale:</p>
 <ul>
-<li>Multiple levels of branching from the <code>master</code> branch can create opportunities
+<li>Multiple levels of branching from the <code>main</code> branch can create opportunities
+    for merge conflicts</li>
+</ul>
+<p>Exceptions:</p>
+<ul>
+<li>None</li>
+</ul>
+<h2 id="gt-100-only-branch-from-main">(GT-100) Only Branch from Main<a class="headerlink" href="#gt-100-only-branch-from-main" title="Permanent link">&para;</a></h2>
+<p>All branches must be created from the <code>main</code> branch</p>
+<p>Rationale:</p>
+<ul>
+<li>Multiple levels of branching from the <code>main</code> branch can create opportunities
     for merge conflicts</li>
 </ul>
 <p>Exceptions:</p>
@@ -489,7 +514,7 @@
 <li>None</li>
 </ul>
 <h2 id="gt-200-feature-branch-naming">(GT-200) Feature Branch Naming<a class="headerlink" href="#gt-200-feature-branch-naming" title="Permanent link">&para;</a></h2>
-<p>Per GT-200, repositories should only contain a single <code>master</code> branch and zero
+<p>Per GT-200, repositories should only contain a single <code>main</code> branch and zero
 or more feature branches.</p>
 <p>Feature branches must be named: <code>feature/&lt;descriptive name&gt;</code></p>
 <p>For example, if you're working on a feature that allows users to change the email
@@ -504,13 +529,13 @@ address in their profile, the branch should be named <code>feature/change-email<
 <li>None</li>
 </ul>
 <h2 id="gt-300-delete-merged-branches">(GT-300) Delete Merged Branches<a class="headerlink" href="#gt-300-delete-merged-branches" title="Permanent link">&para;</a></h2>
-<p>After a branch has been merged to master, it must be immediately deleted.</p>
+<p>After a branch has been merged to the <code>main</code> branch, it must be immediately deleted.</p>
 <p>Rationale:</p>
 <ul>
 <li>Short-lived branches are a best-practice for minimizing merge conflicts.
     Leaving many branches active in a repository makes it difficult for team members
     to navigate the ongoing work. Once a branch has been reviewed, approved, and merged
-    into the <code>master</code> branch, it should be immediately deleted.</li>
+    into the <code>main</code> branch, it should be immediately deleted.</li>
 <li>A healthy Git repository has a minimum of active branches.</li>
 <li>This is <a href="https://help.github.com/en/github/administering-a-repository/managing-the-automatic-deletion-of-branches">easy to comply with using GitHub</a>.</li>
 </ul>
